@@ -1,3 +1,5 @@
+import HeroLogo from "./components/heroLogo";
+
 const LandingPage = () => {
   return (
     <div
@@ -9,7 +11,9 @@ const LandingPage = () => {
     flex
     items-center
     justify-center
-    "></div>
+    ">
+      <HeroLogo />
+    </div>
   );
 };
 
