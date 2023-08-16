@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {}
+    colors: {
+   backgroundBrown: "#574F3D",
+   lightText: "#EBE0C6",
+   opaqueBrown: "#4E371F",
+   darkMenu: "#423E35",
+   goldHamburger: "#8F7538",
+   goldButton: "#AE882B",
+   buttonBorder: "#4E371F"
+
+ },
+    extend: {
+    }
   },
   plugins: []
 };
