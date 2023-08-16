@@ -1,8 +1,8 @@
-const LandingPage = () => {
+const AboutPage = () => {
   return (
     <div
       className="
-    bg-landingPageHero
+    bg-backgroundImage
     bg-cover
     bg-center
     h-screen
@@ -13,4 +13,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default AboutPage;

@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    backgroundImage: {
+      landingPageHero: "url('../src/Assets/images/landingHeroImage.png')",
+      backgroundImage: "url('../src/Assets/images/imageBackground.png')"
+    },
     colors: {
    backgroundBrown: "#574F3D",
    lightText: "#EBE0C6",

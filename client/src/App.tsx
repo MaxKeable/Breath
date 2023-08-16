@@ -1,10 +1,17 @@
+import AboutPage from "./Pages/AboutPage/AboutPage";
+import ContactPage from "./Pages/ContactPage/ContactPage";
 import HomePage from "./Pages/HomePage/Home";
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import RestreatsPage from "./Pages/RetreatsPage/RetreatsPage";
 
 function App() {
   return (
-    <div className="App bg-backgroundBrown">
-      <h1 className="font-bold underline">HELLLOOOO FUCKER</h1>
+    <div>
+      <LandingPage />
       <HomePage />
+      <AboutPage />
+      <RestreatsPage />
+      <ContactPage />
     </div>
   );
 }
