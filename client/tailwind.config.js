@@ -3,6 +3,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      'playfair': ['Playfair Display', 'serif'],
+    },
     backgroundImage: {
       landingPageHero: "url('../src/Assets/images/landingHeroImage.png')",
       backgroundImage: "url('../src/Assets/images/imageBackground.png')"
@@ -16,6 +19,7 @@ module.exports = {
    goldButton: "#AE882B",
    buttonBorder: "#4E371F",
    darkBrownBackground: "#2F2B22",
+   goldButtonBorder: "#98783F"
  },
     extend: {}
   },
