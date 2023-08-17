@@ -1,3 +1,5 @@
+import About from "./components/About";
+
 const AboutPage = () => {
   return (
     <div
@@ -9,7 +11,9 @@ const AboutPage = () => {
     flex
     items-center
     justify-center
-    "></div>
+    ">
+      <About />
+    </div>
   );
 };
 

@@ -1,39 +1,33 @@
 import CallToAction from "./components/CallToAction";
-import homeHeroImage from "../../Assets/images/homeHeroImage.png";
+import homeHeroImage from "../../Assets/images/newHeroImage.png";
+import useMediaQuery from "../../Hooks/useMediaQuery";
 
 const HomePage = () => {
+  const isLargeScreen = useMediaQuery("(min-width: 1200px)");
+
   return (
     <div
       className="
     bg-backgroundBrown
     h-screen
     grid
-    grid-cols-2
+    lg:grid-cols-2
     ">
-      <div className="flex justify-center items-center">
-        <CallToAction />
+      <div className="flex justify-center items-center mx-5 sm:mx-0">
+        <div className="relative flex ">
+          <CallToAction />
+        </div>
       </div>
       <div className="grid grid-cols-3">
-        <div className="flex col-span-2 justify-end items-center">
-          <div
-            className="bg-darkBrownBackground flex items-end"
-            style={{ height: "460px", width: "360px" }}>
-            <div className="flex justify-end items-center ">
-              <div
-                className=" flex items-end h-4/6 "
-                style={{
-                  backgroundImage: `url(${homeHeroImage})`,
-                  backgroundSize: "cover",
-                  height: "450px",
-                  width: "350px"
-                }}>
-                <div
-                  className="border-8 border-darkBrownBackground"
-                  style={{ height: "430px", width: "340px" }}></div>
-              </div>
-            </div>
+        {isLargeScreen && (
+          <div className="flex md:col-span-2 justify-end items-center">
+            <img
+              className="h-4/6"
+              src={homeHeroImage}
+              alt="person doing yoga on a mountain"
+            />
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ module.exports = {
     colors: {
    backgroundBrown: "#574F3D",
    lightText: "#EBE0C6",
-   opaqueBrown: "#4E371F",
+   opaqueBrown: "#4E371F6B",
    darkMenu: "#423E35",
    goldHamburger: "#8F7538",
    goldButton: "#AE882B",
